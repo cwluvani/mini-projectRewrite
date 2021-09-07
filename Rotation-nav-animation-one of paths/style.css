@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* often initialize a global template*/
+
 * {
   box-sizing: border-box;
 }
@@ -89,6 +91,8 @@ nav ul {
   list-style-type: none;
   padding-left: 30px;
 }
+
+/* nav ul list is outside the viewport but actually it is transformed beyond negative 100%, show-nav means when container rotate, li lists transform from outside the viewport. */
 
 nav ul li {
   text-transform: uppercase;
