@@ -106,5 +106,11 @@ submitBtn.addEventListener('click', () => {
                 <button onclick="location.reload()">Reload</button>
             `;
         }
+
+    } else {
+        alert('Please choose a answer.')
+        // warning when user not choose anything. Actually, we should add more details to avoid the program can't move forward
     }
+
+
 })
