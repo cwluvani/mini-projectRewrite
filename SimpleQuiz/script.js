@@ -94,12 +94,9 @@ submitBtn.addEventListener('click', () => {
         if (currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-            /*
-            template string use for
-             */
-            /*
-            location.reload() refresh page
-            */
+
+            //template string
+            //location.reload() refresh page
             quiz.innerHTML = `
                 <h2>You answer ${score}/${quizData.length} questions correctly</h2>
                     
@@ -111,6 +108,5 @@ submitBtn.addEventListener('click', () => {
         alert('Please choose a answer.')
         // warning when user not choose anything. Actually, we should add more details to avoid the program can't move forward
     }
-
 
 })
