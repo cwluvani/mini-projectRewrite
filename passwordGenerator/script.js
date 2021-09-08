@@ -39,10 +39,11 @@ generateEl.addEventListener('click', () => {
     const hasNumber = numbersEl.checked;
     const hasSymbol = symbolsEl.checked;
 
+    // Based on checkbox, we could have a finalPassword
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 })
 
-//how to generate password from checkbox ?
+//how to generate password from checkbox...
 function generatePassword(lower, upper, number, symbol, length) {
     let generatedPassword = '';
     const typesCount = lower + upper + number + symbol;
